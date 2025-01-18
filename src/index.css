@@ -1,0 +1,8 @@
+.bg{
+    background: linear-gradient(192deg, #949439, #6a6ae4, #4d4dcf);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    margin: 0;
+}
