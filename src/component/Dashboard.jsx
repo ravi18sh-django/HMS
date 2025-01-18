@@ -1,6 +1,6 @@
 import React from "react";
 import '../App.css'
-import logo from '../assets/images/logo.png';
+import logo from '../assets/logo.png';
 import InfoCards from "./Infocards";
 import CircleGraph from "./Circlegraph";
 import PatientStatusGraph from "./Patientstatusgraph";
@@ -29,8 +29,8 @@ const Dashboard = () => {
             {/* Main Content */}
             <main className="main-content">
                 <InfoCards />
-                <div className="row mb-4">
-                    <div className="col-md-4 mb-4">
+                <div className="row justify-content-between mb-4">
+                    <div className="col-md-3 mb-4">
                         <CircleGraph />
                     </div>
                     <div className="col-md-8 mb-4">

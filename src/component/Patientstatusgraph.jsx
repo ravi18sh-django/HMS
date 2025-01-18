@@ -20,7 +20,7 @@ const PatientStatusGraph = () => {
     datasets: [
       {
         label: "Patient Status", // Title for the graph
-        data: [30, 70], // Example data: 30 deaths, 70 recovered. You can dynamically change these values.
+        data: [22, 48], // Example data: 30 deaths, 70 recovered. You can dynamically change these values.
         backgroundColor: ["#FF5733", "#2c51cd"], // Red for death, Green for recovered
         borderColor: ["#FF5733", "#2c51cd"], // Border color for each bar
         borderWidth: 1,
