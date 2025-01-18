@@ -1,74 +1,179 @@
 /* Full layout container */
 .dashboard-container {
-    display: flex;
-    height: 100vh;
-    font-family: Arial, sans-serif;
-  }
-  
-  /* Sidebar styling */
-  .sidebar {
-    width: 250px;
-    background-color: #343a40;
-    color: white;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .sidebar-title {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #495057;
-    padding-bottom: 10px;
-  }
-  
-  .menu-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .menu-item {
-    margin: 10px 0;
-    cursor: pointer;
-    padding: 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-  }
-  
-  .menu-item:hover {
-    background-color: #495057;
-  }
-  
-  /* Main content styling */
-  .main-content {
-    flex: 1;
-    padding: 20px;
-    background-color: #f8f9fa;
-    overflow-y: auto;
-  }
-  
-  .main-content h1 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-  }
-  
-  .widget-container {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-  
-  .widget {
-    flex: 1;
-    min-width: 200px;
-    height: 150px;
-    background-color: #ffffff;
-    border: 1px solid #dee2e6;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Sidebar styling */
+.sidebar {
+  width: 250px;
+  background-color: #2C51CD;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-title {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-item {
+  margin: 10px 0;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.menu-item:hover {
+  background-color: #495057;
+}
+
+/* Main content styling */
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #f8f9fa;
+  overflow-y: auto;
+}
+
+.main-content h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.widget-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.widget {
+  flex: 1;
+  min-width: 200px;
+  height: 150px;
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+  /* width: 200px; 
+    height: 200px; */
+  overflow: hidden;
+  /* Hide any overflow */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.logo {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  /* Ensures the image fits without distortion */
+}
+
+li.menu-item.active {
+  background: #36b40b;
+}
+
+
+
+.medicines-container {
+  padding: 20px;
+}
+
+.medicine-card {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.medicine-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.medicine-card .card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.medicine-card .card-text {
+  font-size: 1rem;
+  color: #34495e;
+}
+
+.medicine-card .card-footer {
+  background-color: #f1f1f1;
+  font-weight: bold;
+  text-align: center;
+  color: #16a085;
+}
+
+
+.recent-patient-list {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+.recent-patient-list .table th,
+.recent-patient-list .table td {
+  text-align: center;
+}
+
+.recent-patient-list .table th {
+  background-color: #007bff;
+  color: white;
+}
+
+.recent-patient-list .table td {
+  font-size: 0.9rem;
+}
+
+.recent-patient-list .badge {
+  font-size: 0.8rem;
+}
+
+.recent-patient-list .btn {
+  margin-top: 5px;
+}
+.recent-patient-list .table td {
+  color: #878383;
+}
+
+tbody, td, tfoot, th, thead, tr {
+  vertical-align: middle;
+}
+
+.recent-patient-list .table {
+  border-color: #6c757d; /* Dark grey border */
+}
+
+.recent-patient-list .table th,
+.recent-patient-list .table td {
+  border-color: #6c757d; /* Dark grey border for table cells */
+}
+
+.bg-success {
+  background-color: rgb(54 180 11) !important;
+}
