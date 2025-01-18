@@ -1,6 +1,6 @@
 import React from "react";
 import '../App.css'
-import logo from '../assets/images/logo.png'
+import logo from '../assets/images/logo.png';
 import InfoCards from "./Infocards";
 import CircleGraph from "./Circlegraph";
 import PatientStatusGraph from "./Patientstatusgraph";
