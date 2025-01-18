@@ -4,8 +4,6 @@ import logo from '../assets/logo.png';
 import InfoCards from "./Infocards";
 import CircleGraph from "./Circlegraph";
 import PatientStatusGraph from "./Patientstatusgraph";
-import MostSellingMedicines from "./MostSellingMedicines";
-import MedicineRevenueGraph from './Medicinerevenuegraph'
 import RecentPatientList from "./Recentpatientlist";
 
 const Dashboard = () => {

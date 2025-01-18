@@ -1,6 +1,9 @@
 import React from 'react';
 import { Table, Button } from 'react-bootstrap';
-import '../app.css'
+import '../App.css'
+
+
+
 const RecentPatientList = () => {
   // Sample data for recent patients
   const patients = [
